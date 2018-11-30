@@ -32,6 +32,35 @@ $ npm run dev
 * 在 App.vue 页面中添加一些小程序页面快速布局的样式类
 使用flex简单高效快速布局，并且兼容多设备端
 
+## 文档
+### 引入小程序组件库，以 vant-weapp 为例：
+
+**下载**
+直接通过 git 下载 Vant Weapp 源代码，并将dist目录拷贝到项目的 static/vant 目录下：
+``` bash
+git clone https://github.com/youzan/vant-weapp.git
+```
+**使用组件**
+以按钮组件为例，只需要在 pages.js 文件中引入按钮对应的自定义组件即可
+
+``` js
+module.exports = [
+  {
+    path: 'pages/index', // 页面路径，同时是 vue 文件相对于 src 的路径
+    config: { // 页面配置，即 page.json 的内容
+      navigationBarTitleText: '首页',
+      // ++++++++++ 新加 +++++
+      usingComponents: {
+        "van-button": "/static/vant/button/index"
+      }
+    }
+  }
+]
+```
+接着就可以在组件直接使用：
+```html
+<van-button type="primary">按钮</van-button>
+```
 
 ## Q&A
 
