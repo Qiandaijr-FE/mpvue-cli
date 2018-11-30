@@ -10,7 +10,7 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "wxf2c028958b7393e4",
+	"appid": "{{ appid }}",
 	"projectname": "mcwpmp",
 	"condition": {
 		"search": {

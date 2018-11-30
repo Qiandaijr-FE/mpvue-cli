@@ -4,6 +4,7 @@
 ## 快速入手
 
 ``` bash
+# 安装前请先确保全局环境下已安装node、npm和yarn
 $ npm install -g vue-cli
 $ vue init Qiandaijr-FE/mpvue-cli mcwp-mp
 $ cd mcwp-mp
