@@ -6,7 +6,6 @@
       <button @click="increment">+</button>
       <button @click="decrement">-</button>
     </p>
-    <van-button type="primary">主要按钮</van-button>
     <div>{{ city }}</div>
     <a @click="goHome" class="home">去往首页</a>
   </div>
